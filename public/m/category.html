@@ -22,7 +22,7 @@
     <!-- 头部区域 -->
     <header id="header">
         <div class="left">
-            <i class="fa fa-arrow-left"></i>
+            <a href="./index.html" class="fa fa-arrow-left"></a>
         </div>
         <div class="center">
             <form action="#">
@@ -30,7 +30,7 @@
             </form>
         </div>
         <div class="right">
-            <i class="fa fa-search"></i>
+            <a href="./search.html" class="fa fa-search"></a>
         </div>
     </header>
 
@@ -38,30 +38,83 @@
     <!-- 主题区域 -->
     <main id="main">
         <div class="left">
-            <ul>
-                <li><a href="#">运动馆</a></li>
-                <li><a href="#">女士馆</a></li>
-                <li><a href="#">男士馆</a></li>
-                <li><a href="#">帆布馆</a></li>
-                <li><a href="#">户外管</a></li>
-            </ul>
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <ul>
+                        <!-- <li class="active"><a href="#">运动馆</a></li>
+                            <li><a href="#">女士馆</a></li>
+                            <li><a href="#">男士馆</a></li>
+                            <li><a href="#">帆布馆</a></li>
+                            <li><a href="#">户外管</a></li> -->
+                    </ul>
+                </div>
+            </div>
+
         </div>
-        <div class="right"></div>
+        <div class="right">
+            <div class="mui-row">
+                <!-- <div class="mui-col-xs-4">
+                    <a href="#">
+                        <img src="./images/brand1.png" alt="">
+                        <p>耐克</p>
+                    </a>
+                </div>
+                <div class="mui-col-xs-4">
+                    <a href="#">
+                        <img src="./images/brand2.png" alt="">
+                        <p>耐克</p>
+                    </a>
+                </div>
+                <div class="mui-col-xs-4">
+                    <a href="#">
+                        <img src="./images/brand3.png" alt="">
+                        <p>耐克</p>
+                    </a>
+                </div>
+                <div class="mui-col-xs-4">
+                    <a href="#">
+                        <img src="./images/brand4.png" alt="">
+                        <p>耐克</p>
+                    </a>
+                </div>
+                <div class="mui-col-xs-4">
+                    <a href="#">
+                        <img src="./images/brand5.png" alt="">
+                        <p>耐克</p>
+                    </a>
+                </div>
+                <div class="mui-col-xs-4">
+                    <a href="#">
+                        <img src="./images/brand6.png" alt="">
+                        <p>耐克</p>
+                    </a>
+                </div>
+                <div class="mui-col-xs-4">
+                    <a href="#">
+                        <img src="./images/brand7.png" alt="">
+                        <p>耐克</p>
+                    </a>
+                </div>
+                <div class="mui-col-xs-4">
+                    <a href="#">
+                        <img src="./images/brand8.png" alt="">
+                        <p>耐克</p>
+                    </a>
+                </div> -->
+            </div>
+        </div>
     </main>
-
-
-
     <!-- 底部区域 -->
     <footer id="footer">
         <div class="mui-row">
             <div class="mui-col-xs-3">
                 <a href="index.html"">
-                    <i class="fa fa-home"></i>
+                    <i class=" fa fa-home"></i>
                     <span>首页</span>
                 </a>
             </div>
             <div class="mui-col-xs-3">
-                <a href="#"  class="active">
+                <a href="#" class="active">
                     <i class="fa fa-bars"></i>
                     <span>分类</span>
                 </a>
@@ -81,6 +134,28 @@
         </div>
     </footer>
 
+    <!-- 遍历左边分类模板 -->
+    <script type="text/html" id="categoryLeft">
+        {{each list value i}}
+        <li class="{{i == 0?'active':''}}" data-id='{{value.id}}'><a href="#">{{value.categoryName}}</a></li>
+     {{/each}}
+    </script>
+
+    <!-- 遍历右边分类模板 -->
+    <script type="text/html" id="categoryRight">
+        {{if rows.length >0}}
+        {{each rows value i}}
+    <div class="mui-col-xs-4">
+        <a href="#">
+            <img src="{{value.brandLogo}}" alt="">
+            <p>{{value.brandName}}</p>
+        </a>
+    </div>
+    {{/each}}
+    {{else}}
+    <p>没有更多了</p>
+    {{/if}}
+    </script>
 
     <!-- 引入mui的js文件 -->
     <script src="./lib/mui/js/mui.js"></script>
@@ -89,7 +164,9 @@
     <!-- 引入模板 -->
     <script src="./lib/artTemplate/template-web.js"></script>
     <!-- 引入自己的js -->
-    <script src="./js/index.js"></script>
+    <script src="./js/category.js"></script>
+
+
 </body>
 
 </html>

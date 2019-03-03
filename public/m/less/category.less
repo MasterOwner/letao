@@ -1,36 +1,70 @@
 @import './base.less';
 
-#header{
+#header {
     text-align: center;
     line-height: .45rem;
-    .center{
-        form{
+
+    .center {
+        form {
             height: .45rem;
-            input{
+
+            input {
                 background-color: #fff;
-                &::placeholder{
-                    text-align: left;
-                    font-size: .14rem;
-                }
+                text-align: left;
+                font-size: .14rem;
+                color: #000;
             }
         }
     }
+    a{
+        color:#fff;
+    }
 }
 
-#main{
+#main {
     display: flex;
-    .left{
-        width: 0.8rem;   
-        li{
+    background-color: #ccc;
+
+    .left {
+        width: 0.8rem;
+
+        li {
             width: 100%;
             height: 0.45rem;
-            a{
-                display: block;
-                height: 100%;
+            background-color: #fff;
+
+            &.active {
+                background-color: #ccc;
             }
-        } 
+
+            a {
+                width: 100%;
+                display: block;
+                color: black;
+                text-align: center;
+                line-height: 0.45rem;
+                border-bottom: 1px solid #ccc;
+
+            }
+        }
     }
-    .right{
+
+    .right {
         flex: 1;
+        padding: .1rem;
+
+        a {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            margin-bottom: .1rem;
+
+            img {
+                width: 100%;
+            }
+        }
     }
 }

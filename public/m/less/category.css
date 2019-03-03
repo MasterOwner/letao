@@ -33,6 +33,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 998;
 }
 #header .left {
   width: 0.45rem;
@@ -55,7 +56,6 @@ a {
 #main {
   padding: 0.45rem 0;
   height: 100vh;
-  position: relative;
 }
 #main .mui-scroll-wrapper {
   position: relative;
@@ -67,6 +67,7 @@ a {
   left: 0;
   bottom: 0;
   width: 100%;
+  z-index: 998;
 }
 #footer a {
   display: flex;
@@ -91,13 +92,16 @@ a {
 }
 #header .center form input {
   background-color: #fff;
-}
-#header .center form input::placeholder {
   text-align: left;
   font-size: .14rem;
+  color: #000;
+}
+#header a {
+  color: #fff;
 }
 #main {
   display: flex;
+  background-color: #ccc;
 }
 #main .left {
   width: 0.8rem;
@@ -105,11 +109,32 @@ a {
 #main .left li {
   width: 100%;
   height: 0.45rem;
+  background-color: #fff;
+}
+#main .left li.active {
+  background-color: #ccc;
 }
 #main .left li a {
+  width: 100%;
   display: block;
-  height: 100%;
+  color: black;
+  text-align: center;
+  line-height: 0.45rem;
+  border-bottom: 1px solid #ccc;
 }
 #main .right {
   flex: 1;
+  padding: .1rem;
+}
+#main .right a {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin-bottom: .1rem;
+}
+#main .right a img {
+  width: 100%;
 }

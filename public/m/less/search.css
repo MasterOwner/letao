@@ -85,3 +85,37 @@ a {
 #footer a.active {
   color: orange;
 }
+#header .left a {
+  color: #fff;
+}
+#main {
+  background-color: #fff;
+}
+#main form {
+  display: flex;
+  padding: .1rem;
+  padding-bottom: 0;
+}
+#main form input {
+  flex: 1;
+  height: .34rem;
+  background-color: #fff;
+  border: 1px solid #006699;
+  text-align: left;
+  font-size: .14rem;
+  border-radius: .06rem 0 0 .06rem;
+}
+#main form button {
+  width: .6rem;
+  height: .34rem;
+  border: 1px solid #006699;
+  border-radius: 0 .06rem .06rem 0;
+  background-color: #006699;
+  color: #fff;
+}
+#main .history span {
+  font-size: .14rem;
+}
+#main .history a {
+  color: #666;
+}

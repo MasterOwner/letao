@@ -15,6 +15,16 @@ h6 {
 img {
   vertical-align: middle;
 }
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
 #header {
   display: flex;
   background-color: #006699;
@@ -23,6 +33,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 998;
 }
 #header .left {
   width: 0.45rem;
@@ -45,7 +56,6 @@ img {
 #main {
   padding: 0.45rem 0;
   height: 100vh;
-  position: relative;
 }
 #main .mui-scroll-wrapper {
   position: relative;
@@ -57,6 +67,7 @@ img {
   left: 0;
   bottom: 0;
   width: 100%;
+  z-index: 998;
 }
 #footer a {
   display: flex;
@@ -71,6 +82,9 @@ img {
 }
 #footer a.active {
   color: orange;
+}
+#header a {
+  color: #fff;
 }
 #main a {
   display: block;
