@@ -68,6 +68,9 @@ $(function () {
             //清空搜索内容
             $('.input-search').val("");
 
+            //跳转到商品页面
+            location = 'product.html?search='+search+'&time='+new Date().getTime();
+
         })
     }
 
@@ -93,14 +96,22 @@ $(function () {
     //删除记录函数
     function deleteSearch() {
 
-        $('.deleteL span').on('tap', function () {
+        $('.searchdelete ul').on('tap','span',function () {
             var idx = $(this).data('index');
             console.log(idx);
+            var searchContent = JSON.parse(localStorage.getItem('searchContent'));
+            searchContent.splice(idx,1);
+            localStorage.setItem('searchContent',JSON.stringify(searchContent));
+            querySearch();
 
         })
     }
     //清空记录函数
     function clearSearch() {
+        $('.btn-clear').on('tap',function(){
+            localStorage.removeItem('searchContent');
+            querySearch();
+        })
 
     }
 

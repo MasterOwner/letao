@@ -63,6 +63,34 @@ a {
   position: relative;
   height: 100%;
 }
+#main .mui-scroll-wrapper form {
+  display: flex;
+  padding: .1rem;
+  padding-bottom: 0;
+}
+#main .mui-scroll-wrapper form input {
+  flex: 1;
+  height: .34rem;
+  background-color: #fff;
+  border: 1px solid #006699;
+  text-align: left;
+  font-size: .14rem;
+  border-radius: .06rem 0 0 .06rem;
+}
+#main .mui-scroll-wrapper form button {
+  width: .6rem;
+  height: .34rem;
+  border: 1px solid #006699;
+  border-radius: 0 .06rem .06rem 0;
+  background-color: #006699;
+  color: #fff;
+}
+#main .mui-scroll-wrapper .history span {
+  font-size: .14rem;
+}
+#main .mui-scroll-wrapper .history a {
+  color: #666;
+}
 #footer {
   background-color: #006699;
   position: fixed;
@@ -90,32 +118,4 @@ a {
 }
 #main {
   background-color: #fff;
-}
-#main form {
-  display: flex;
-  padding: .1rem;
-  padding-bottom: 0;
-}
-#main form input {
-  flex: 1;
-  height: .34rem;
-  background-color: #fff;
-  border: 1px solid #006699;
-  text-align: left;
-  font-size: .14rem;
-  border-radius: .06rem 0 0 .06rem;
-}
-#main form button {
-  width: .6rem;
-  height: .34rem;
-  border: 1px solid #006699;
-  border-radius: 0 .06rem .06rem 0;
-  background-color: #006699;
-  color: #fff;
-}
-#main .history span {
-  font-size: .14rem;
-}
-#main .history a {
-  color: #666;
 }

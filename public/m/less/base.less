@@ -74,8 +74,39 @@ a{
     .mui-scroll-wrapper{
         position: relative;
         height: 100%;
+        form{
+            display: flex;
+            padding: .1rem;
+            padding-bottom: 0;
+            input{
+             flex: 1;
+             height: .34rem;
+             background-color: #fff;
+             border: 1px solid @main-color;
+             text-align: left;
+             font-size: .14rem;
+             border-radius: .06rem 0 0 .06rem;
+            }
+            button{
+                width: .6rem;
+                height: .34rem;
+                border: 1px solid @main-color;
+                border-radius: 0 .06rem .06rem 0;
+                background-color: @main-color;
+                color:#fff;
+            }
+        }
+        .history{
+            span{
+                font-size: .14rem;
+            }
+            a{
+                color: #666;
+            }
+        }
     }
 }
+
 
 #footer{
     background-color: @main-color;
