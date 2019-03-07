@@ -3,6 +3,7 @@ $(function () {
     searchproduct();
     sortproduct();
     pullrefresh();
+    gotodetail();
 
     var params;
 
@@ -174,6 +175,13 @@ $(function () {
 
     }
 
+    //点击购买跳转详情页面
+    function gotodetail(){
+        $('.mui-card-content .mui-row').on('tap','.btn-buy',function(){
+            var id = $(this).data('id');
+            location = 'detail.html?id='+id;
+        })
+    }
 
 
     //获取url的参数

@@ -116,30 +116,55 @@ a {
 #header a {
   color: #fff;
 }
-#main .mui-card-header a {
-  color: #666;
-  font-size: .14rem;
+#main {
+  background-color: #fff;
 }
-#main .mui-card-header a.active {
-  color: red;
+#main a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  padding: 0 .1rem;
+  padding-bottom: .1rem;
 }
-#main .mui-card-content {
-  text-align: center;
-  padding: .1rem;
+#main a .left {
+  width: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-#main .mui-card-content .mui-col-xs-6 {
-  border: 1px solid #ccc;
-}
-#main .mui-card-content .mui-col-xs-6:nth-child(even) {
-  border-left: 0;
-}
-#main .mui-card-content img {
+#main a .left img {
   width: 100%;
 }
-#main .mui-card-content p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+#main a .left > div {
+  height: .23rem;
+  position: relative;
+}
+#main a .left > div input {
+  position: absolute;
+  top: -0.03rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#main a .left > div input::before {
+  color: hotpink;
+}
+#main a .right {
+  flex: 1;
+  padding-top: .15rem;
+}
+#main a .right p {
+  white-space: normal;
+}
+#main a .right .price {
+  padding: .1rem 0;
+}
+#main a .right .price span {
+  color: red;
+}
+#main a .right .price del {
+  color: #666;
+}
+#main a .right .params {
+  display: flex;
+  justify-content: space-between;
 }

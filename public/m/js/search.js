@@ -1,10 +1,11 @@
 $(function () {
 
     //调用函数
-    addSearch()
-    querySearch()
-    deleteSearch()
-    clearSearch()
+    addSearch();
+    querySearch();
+    deleteSearch();
+    clearSearch();
+    gotoproduct();
 
 
 
@@ -92,10 +93,10 @@ $(function () {
         $('.mui-card-content ul').html(html);
 
     }
-
+    //声明一个变量假设
+     var isdelete = false;
     //删除记录函数
     function deleteSearch() {
-
         $('.searchdelete ul').on('tap','span',function () {
             var idx = $(this).data('index');
             console.log(idx);
@@ -103,7 +104,8 @@ $(function () {
             searchContent.splice(idx,1);
             localStorage.setItem('searchContent',JSON.stringify(searchContent));
             querySearch();
-
+            //点击之后改为true
+            isdelete = true;
         })
     }
     //清空记录函数
@@ -121,6 +123,20 @@ $(function () {
         indicators: false, //是否显示滚动条
         deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
     });
+
+    //点击历史记录跳转商品页面
+    function gotoproduct(){
+        //如果isdelete是false,就触发下面这个事件
+            $('.mui-card ul').on('tap','li',function(){
+                if(isdelete == false){
+                    var search =  $(this).data('search');
+                    location ='product.html?search='+search+'&time='+new Date().getTime();
+                }
+                 //重置,方便下次可以点
+                 isdelete = false;
+            })
+       
+    }
 
 
 })

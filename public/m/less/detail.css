@@ -116,30 +116,32 @@ a {
 #header a {
   color: #fff;
 }
-#main .mui-card-header a {
-  color: #666;
-  font-size: .14rem;
+#main #detail .product-name span {
+  font-weight: bold;
 }
-#main .mui-card-header a.active {
+#main #detail .product-price span {
   color: red;
 }
-#main .mui-card-content {
+#main #detail .product-size {
+  line-height: .4rem;
+}
+#main #detail .product-size .mui-btn {
+  margin-bottom: 0.1rem;
+  padding-right: .1rem;
+}
+#footer {
+  background-color: #ccc;
+}
+#footer a {
+  color: #000;
+}
+#footer a i {
+  font-size: .2rem;
+}
+#footer .mui-col-xs-5 {
   text-align: center;
-  padding: .1rem;
+  padding: .06rem;
 }
-#main .mui-card-content .mui-col-xs-6 {
-  border: 1px solid #ccc;
-}
-#main .mui-card-content .mui-col-xs-6:nth-child(even) {
-  border-left: 0;
-}
-#main .mui-card-content img {
+#footer .mui-col-xs-5 button {
   width: 100%;
-}
-#main .mui-card-content p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
 }

@@ -1,0 +1,59 @@
+@import './base.less';
+
+#header{
+    a{
+        color:#fff;
+    }
+}
+#main{
+    background-color: #fff;
+    a{
+        display: flex;
+        text-decoration: none;
+        color:black;
+        padding:0 .1rem;
+        padding-bottom: .1rem;
+        .left{
+            width: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            img{
+                width: 100%;
+            }
+            >div{
+                height: .23rem;
+                position: relative;
+                input{
+                    position: absolute;
+                    top: -0.03rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    &::before{
+                        color: hotpink;
+                    }
+                }
+            }
+        }
+        .right{
+            flex: 1;
+            padding-top: .15rem;
+            p{
+                white-space: normal;
+            }
+            .price{
+                padding: .1rem 0;
+                span{
+                    color:red;
+                }
+                del{
+                    color:#666;
+                }
+            }
+            .params{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}

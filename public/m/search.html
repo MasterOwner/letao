@@ -99,7 +99,7 @@
     <script id="searchContenttpl" type="text/html">
         {{if list.length>0}}
         {{each list value i}}
-         <li class="mui-table-view-cell">{{value.key}}
+         <li class="mui-table-view-cell" data-search="{{value.key}}">{{value.key}}
             <span class="mui-badge fa fa-close" data-index="{{i}}"></span>
         </li>
         {{/each}}
