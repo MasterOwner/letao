@@ -33,6 +33,12 @@ $(function () {
             dataType: 'json',
             data:{id:id},
             url: '/category/querySecondCategory',
+            beforeSend:function(){
+                $('.mask').show();
+            },
+            complete:function(){
+                $('.mask').hide();
+            },
             success: function (data) {
                 console.log(data);
                 var html = template('categoryRight',data);

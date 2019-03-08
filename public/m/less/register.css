@@ -118,69 +118,16 @@ a {
 }
 #main {
   background-color: #fff;
-  padding-bottom: .9rem;
 }
-#main a {
-  display: flex;
-  text-decoration: none;
-  color: black;
-  padding: 0 .1rem;
-  padding-bottom: .1rem;
-}
-#main a .left {
-  width: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#main a .left img {
-  width: 100%;
-}
-#main a .left > div {
-  height: .23rem;
-  position: relative;
-}
-#main a .left > div input {
+#main .btn-vcode {
   position: absolute;
-  top: -0.03rem;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 0;
+  width: auto;
+  top: .01rem;
 }
-#main a .left > div input::before {
-  color: hotpink;
+#main .btn-btn {
+  padding: .05rem .1rem;
 }
-#main a .right {
-  flex: 1;
-  padding-top: .15rem;
-}
-#main a .right p {
-  white-space: normal;
-}
-#main a .right .price {
-  padding: .1rem 0;
-}
-#main a .right .price span {
-  color: red;
-}
-#main a .right .price del {
-  color: #666;
-}
-#main a .right .params {
-  display: flex;
-  justify-content: space-between;
-}
-.order {
-  position: fixed;
-  bottom: .45rem;
+#main .btn-btn .btn-register {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  color: red;
-  font-weight: 700;
-  border-top: 1px solid #ccc;
-  padding: 0 .1rem;
-}
-.order .order-total {
-  line-height: .34rem;
-  padding-left: .1rem;
 }

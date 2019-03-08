@@ -22,7 +22,7 @@
     <!-- 头部区域 -->
     <header id="header">
         <div class="left">
-            <a href="./index.html" class="fa fa-arrow-left"></a>
+            <a href="#" class="fa fa-arrow-left"></a>
         </div>
         <div class="center">
             <form action="#">
@@ -103,6 +103,10 @@
                 </div> -->
             </div>
         </div>
+         <!-- 在main里面创建一个遮罩层 把main里面所有内容遮住 -->
+         <div class="mask">
+            <img src="./images/loading1.gif" alt="">
+        </div>
     </main>
     <!-- 底部区域 -->
     <footer id="footer">
@@ -114,19 +118,19 @@
                 </a>
             </div>
             <div class="mui-col-xs-3">
-                <a href="#" class="active">
+                <a href="category.html" class="active">
                     <i class="fa fa-bars"></i>
                     <span>分类</span>
                 </a>
             </div>
             <div class="mui-col-xs-3">
-                <a href="#">
+                <a href="cart.html">
                     <i class="fa fa-shopping-cart"></i>
                     <span>购物车</span>
                 </a>
             </div>
             <div class="mui-col-xs-3">
-                <a href="#">
+                <a href="user.html">
                     <i class="fa fa-user"></i>
                     <span>个人中心</span>
                 </a>
@@ -163,6 +167,8 @@
     <script src="./lib/zepto/zepto.min.js"></script>
     <!-- 引入模板 -->
     <script src="./lib/artTemplate/template-web.js"></script>
+    <!-- 引入公共的返回按钮到上一个网页 -->
+    <script src="./js/common.js"></script>
     <!-- 引入自己的js -->
     <script src="./js/category.js"></script>
 
