@@ -1,0 +1,71 @@
+#main {
+  display: flex;
+}
+#main .left {
+  width: 200px;
+  height: 100vh;
+  background-color: skyblue;
+}
+#main .left .top {
+  padding: 30px;
+}
+#main .left .top img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 10px solid #fff;
+}
+#main .left .top p {
+  text-align: center;
+  margin-top: 10px;
+}
+#main .left .list-group #collapseExample {
+  padding-left: 20px;
+}
+#main .left .list-group .list-group-item {
+  background-color: skyblue;
+  border: 0;
+}
+#main .left .list-group .list-group-item.active {
+  background-color: hotpink;
+}
+#main .left .list-group .list-group-item:hover {
+  background-color: hotpink;
+}
+#main .right {
+  flex: 1;
+  padding: 20px;
+}
+#main .right .title {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+#main .right .title a {
+  font-size: 20px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+}
+#main .right .title a.fa-navicon {
+  color: #fff;
+  width: 35px;
+  background-color: yellowgreen;
+}
+#main .right .content {
+  background-color: #eee;
+  padding: 20px;
+}
+#main .right .content th,
+#main .right .content td {
+  text-align: center;
+  line-height: 30px;
+}
+#main .right .content .modal .input-group {
+  padding: 10px;
+}
+#main .right .content .modal .input-group .prev {
+  width: 160px;
+  height: 160px;
+}

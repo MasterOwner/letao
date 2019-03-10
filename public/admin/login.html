@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>自己写的网页登录端</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./less/login.css">
 </head>
+
 <body>
-    这是登录页面
+
+    <form class="form">
+        <img src="./images/25.png" alt="">
+        <div class="input-group">
+            <span class="input-group-addon" id="sizing-addon2">用户名</span>
+            <input type="text" class="form-control username" placeholder="请输入用户名" aria-describedby="sizing-addon2">
+        </div>
+        <div class="input-group password1">
+            <span class="input-group-addon" id="sizing-addon2">密&nbsp;&nbsp;&nbsp;&nbsp;码</span>
+            <input type="password" class="form-control password" placeholder="请输入密码" aria-describedby="sizing-addon2">
+        </div>
+        <button type="button" class="btn btn-lg btn-block btn-login">登录</button>
+    </form>
+
+
+
+
+
+    <!-- 依赖jquery,要先引入jquery -->
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./js/login.js"></script>
 </body>
+
 </html>
